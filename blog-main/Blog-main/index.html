@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Blog Tech</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="cabecalho">
+
+        <h1>Meu Blog Tech</h1>
+
+        <p>
+            Vou compartilhar conhecimentos sobre tecnologia e programação.
+        </p>
+
+    </header>
+
+
+    <main class="container">
+
+        <section class="posts">
+
+
+            <!-- POST 1 -->
+
+            <article class="post">
+
+                <div class="titulo">
+
+                    <img
+                        src="Gemini_Generated_Image_4aizpd4aizpd4aiz.png"
+                        alt="Emblema em formato de livro aberto estilizado com ícones de ciência e tecnologia em um fundo de circuito impresso."
+                    >
+
+                    <div>
+                        <h2>
+                            O primeiro computador não foi a máquina de Turing?
+                        </h2>
+
+                        <p class="autor">
+                            Por: JOÃO VITOR
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="conteudo">
+
+                    <p>
+                        Apesar de Alan Turing ser conhecido como pai da
+                        computação, ele não criou o primeiro computador.
+                        Entre os primeiros computadores, um deles foi
+                        chamado Colossus...
+                    </p>
+
+                    <p>
+                        Embora o Colossus tenha funcionado antes como um
+                        "herói de guerra" especializado, o ENIAC é
+                        frequentemente considerado o primeiro computador
+                        de uso geral.
+                    </p>
+
+                    <p>
+                        E aí, qual você considera o primeiro computador?
+                    </p>
+
+                </div>
+
+
+                <div class="fonte">
+                    <strong>Fonte:</strong>
+                    The National Museum of Computing
+                </div>
+
+
+                <div class="reacoes">
+
+                    <button type="button">
+                        ❤️ <span>0</span>
+                    </button>
+
+                    <button type="button">
+                        👍 <span>0</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- POST 2 -->
+
+            <article class="post">
+
+                <div class="titulo">
+
+                    <img
+                        src="Gemini_Generated_Image_4aizpd4aizpd4aiz.png"
+                        alt="Emblema em formato de livro aberto estilizado com ícones de ciência e tecnologia em um fundo de circuito impresso."
+                    >
+
+                    <div>
+                        <h2>
+                            A evolução dos computadores
+                        </h2>
+
+                        <p class="autor">
+                            Por: JOÃO VITOR
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="conteudo">
+
+                    <p>
+                        Os computadores passaram por uma enorme evolução
+                        ao longo das últimas décadas.
+                    </p>
+
+                    <p>
+                        As primeiras máquinas ocupavam salas inteiras e
+                        tinham uma capacidade de processamento muito menor
+                        que a de um computador moderno.
+                    </p>
+
+                    <p>
+                        Hoje, temos computadores muito mais rápidos,
+                        compactos e acessíveis.
+                    </p>
+
+                </div>
+
+
+                <div class="fonte">
+                    <strong>Fonte:</strong>
+                    História da Computação
+                </div>
+
+
+                <div class="reacoes">
+
+                    <button type="button">
+                        ❤️ <span>0</span>
+                    </button>
+
+                    <button type="button">
+                        👍 <span>0</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+            <!-- POST 3 -->
+
+            <article class="post">
+
+                <div class="titulo">
+
+                    <img
+                        src="Gemini_Generated_Image_4aizpd4aizpd4aiz.png"
+                        alt="Emblema em formato de livro aberto estilizado com ícones de ciência e tecnologia em um fundo de circuito impresso."
+                    >
+
+                    <div>
+                        <h2>
+                            O que é programação?
+                        </h2>
+
+                        <p class="autor">
+                            Por: JOÃO VITOR
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="conteudo">
+
+                    <p>
+                        Programação é o processo de criar instruções para
+                        que um computador possa realizar determinadas
+                        tarefas.
+                    </p>
+
+                    <p>
+                        Existem diversas linguagens de programação, como
+                        HTML, CSS, JavaScript, Python e muitas outras.
+                    </p>
+
+                    <p>
+                        Aprender programação pode ser uma ótima maneira
+                        de entender melhor como a tecnologia funciona.
+                    </p>
+
+                </div>
+
+
+                <div class="fonte">
+                    <strong>Fonte:</strong>
+                    Meu Blog Tech
+                </div>
+
+
+                <div class="reacoes">
+
+                    <button type="button">
+                        ❤️ <span>0</span>
+                    </button>
+
+                    <button type="button">
+                        👍 <span>0</span>
+                    </button>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+
+    <footer class="rodape">
+
+        <p>
+            © 2026 Meu Blog Tech — Tecnologia e programação
+        </p>
+
+    </footer>
+
+
+    <script>
+
+        const botoes = document.querySelectorAll(".reacoes button");
+
+        botoes.forEach(function (botao) {
+
+            botao.addEventListener("click", function () {
+
+                const contador = botao.querySelector("span");
+
+                contador.textContent =
+                    Number(contador.textContent) + 1;
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

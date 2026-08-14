@@ -1,0 +1,401 @@
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================
+   BODY
+========================= */
+
+body {
+    background: #f1f5f9;
+
+    color: #333;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* =========================
+   CABEÇALHO
+========================= */
+
+.cabecalho {
+    width: 100%;
+
+    background: linear-gradient(
+        135deg,
+        #183c63,
+        #245987
+    );
+
+    color: #ffffff;
+
+    text-align: center;
+
+    padding: 35px 20px;
+
+    box-shadow:
+        0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.cabecalho h1 {
+    font-size: 2.4rem;
+
+    margin-bottom: 10px;
+
+    letter-spacing: 1px;
+}
+
+
+.cabecalho p {
+    font-size: 1.05rem;
+
+    color: #e8f1f8;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container {
+    width: 100%;
+
+    max-width: 1400px;
+
+    margin: 45px auto;
+
+    padding: 0 25px;
+
+    flex: 1;
+}
+
+
+/* =========================
+   GRID DOS POSTS
+========================= */
+
+.posts {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+
+    align-items: stretch;
+}
+
+
+/* =========================
+   POST
+========================= */
+
+.post {
+    background: #ffffff;
+
+    border: 1px solid #dce3ea;
+
+    border-radius: 12px;
+
+    padding: 25px;
+
+    box-shadow:
+        0 8px 25px rgba(24, 60, 99, 0.08);
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+
+.post:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 14px 30px rgba(24, 60, 99, 0.15);
+}
+
+
+/* =========================
+   TÍTULO
+========================= */
+
+.titulo {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    margin-bottom: 22px;
+
+    padding-bottom: 18px;
+
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+/* Mantém a imagem original */
+
+.titulo img {
+    width: 65px;
+
+    height: 65px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+
+.titulo h2 {
+    color: #183c63;
+
+    font-size: 1.45rem;
+
+    line-height: 1.25;
+
+    margin-bottom: 9px;
+}
+
+
+/* =========================
+   AUTOR
+========================= */
+
+.autor {
+    color: #64748b;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.8rem;
+
+    font-weight: bold;
+
+    letter-spacing: 0.5px;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.conteudo {
+    flex: 1;
+}
+
+
+.conteudo p {
+    color: #444;
+
+    font-size: 1rem;
+
+    line-height: 1.7;
+
+    margin-bottom: 17px;
+}
+
+
+.conteudo p:last-child {
+    margin-bottom: 0;
+}
+
+
+/* =========================
+   FONTE
+========================= */
+
+.fonte {
+    margin-top: 20px;
+
+    padding: 12px 14px;
+
+    background: #f4f7fa;
+
+    border-left: 4px solid #183c63;
+
+    border-radius: 4px;
+
+    color: #666;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================
+   REAÇÕES
+========================= */
+
+.reacoes {
+    display: flex;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    padding-top: 18px;
+
+    border-top: 1px solid #e5e7eb;
+}
+
+
+.reacoes button {
+    border: 1px solid #d1d5db;
+
+    background: #ffffff;
+
+    color: #333;
+
+    padding: 8px 14px;
+
+    border-radius: 7px;
+
+    font-size: 0.95rem;
+
+    cursor: pointer;
+
+    transition:
+        background 0.2s ease,
+        transform 0.2s ease,
+        border-color 0.2s ease;
+}
+
+
+.reacoes button:hover {
+    background: #eef5fb;
+
+    border-color: #183c63;
+
+    transform: translateY(-2px);
+}
+
+
+.reacoes button:active {
+    transform: translateY(0);
+}
+
+
+.reacoes span {
+    font-weight: bold;
+
+    margin-left: 4px;
+}
+
+
+/* =========================
+   RODAPÉ
+========================= */
+
+.rodape {
+    background: #183c63;
+
+    color: #dce9f5;
+
+    text-align: center;
+
+    padding: 20px;
+
+    font-family: Arial, sans-serif;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 1000px) {
+
+    .posts {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+}
+
+
+/* =========================
+   CELULAR
+========================= */
+
+@media (max-width: 650px) {
+
+    .cabecalho {
+        padding: 28px 16px;
+    }
+
+
+    .cabecalho h1 {
+        font-size: 2rem;
+    }
+
+
+    .cabecalho p {
+        font-size: 0.95rem;
+    }
+
+
+    .container {
+        margin: 25px auto;
+
+        padding: 0 15px;
+    }
+
+
+    .posts {
+        grid-template-columns: 1fr;
+
+        gap: 20px;
+    }
+
+
+    .post {
+        padding: 22px;
+    }
+
+
+    .titulo {
+        gap: 12px;
+    }
+
+
+    .titulo img {
+        width: 60px;
+
+        height: 60px;
+    }
+
+
+    .titulo h2 {
+        font-size: 1.35rem;
+    }
+
+
+    .conteudo p {
+        font-size: 1rem;
+
+        line-height: 1.7;
+    }
+
+}
