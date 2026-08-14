@@ -1,6 +1,6 @@
-/* =========================
-   RESET
-========================= */
+/* ===========================
+   CONFIGURAÇÕES GERAIS
+=========================== */
 
 * {
     margin: 0;
@@ -9,393 +9,288 @@
 }
 
 
-/* =========================
-   BODY
-========================= */
-
 body {
-    background: #f1f5f9;
 
-    color: #333;
+    background-color: #ffffff;
 
-    font-family: Georgia, "Times New Roman", serif;
+    color: #183c63;
 
-    min-height: 100vh;
-
-    display: flex;
-    flex-direction: column;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 }
 
 
-/* =========================
+/* ===========================
    CABEÇALHO
-========================= */
+=========================== */
 
-.cabecalho {
-    width: 100%;
+header {
 
-    background: linear-gradient(
-        135deg,
-        #183c63,
-        #245987
-    );
+    background-color: #1b426b;
 
-    color: #ffffff;
+    color: white;
 
     text-align: center;
 
-    padding: 35px 20px;
+    padding: 38px 20px 30px;
 
-    box-shadow:
-        0 4px 12px rgba(0, 0, 0, 0.15);
+    width: 100%;
 }
 
 
-.cabecalho h1 {
-    font-size: 2.4rem;
+header h1 {
 
-    margin-bottom: 10px;
+    font-size: 32px;
 
-    letter-spacing: 1px;
+    margin-bottom: 22px;
 }
 
 
-.cabecalho p {
-    font-size: 1.05rem;
+header p {
 
-    color: #e8f1f8;
+    font-size: 16px;
 }
 
 
-/* =========================
+/* ===========================
    CONTAINER
-========================= */
+=========================== */
 
 .container {
+
     width: 100%;
 
-    max-width: 1400px;
-
-    margin: 45px auto;
-
-    padding: 0 25px;
-
-    flex: 1;
-}
-
-
-/* =========================
-   GRID DOS POSTS
-========================= */
-
-.posts {
     display: grid;
 
     grid-template-columns:
         repeat(3, 1fr);
 
-    gap: 25px;
+    gap: 32px;
 
-    align-items: stretch;
+    padding: 32px 20px;
+
+    max-width: 1000px;
+
+    margin: 0 auto;
 }
 
 
-/* =========================
-   POST
-========================= */
+/* ===========================
+   CARDS
+=========================== */
 
 .post {
-    background: #ffffff;
 
-    border: 1px solid #dce3ea;
+    background-color: #ffffff;
 
-    border-radius: 12px;
+    border: 1px solid #34495e;
 
-    padding: 25px;
+    min-height: 440px;
 
-    box-shadow:
-        0 8px 25px rgba(24, 60, 99, 0.08);
+    padding: 28px 18px 16px;
+
+    text-align: center;
 
     display: flex;
 
     flex-direction: column;
 
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
+    align-items: center;
 }
 
 
-.post:hover {
-    transform: translateY(-5px);
+/* ===========================
+   IMAGENS
+=========================== */
 
-    box-shadow:
-        0 14px 30px rgba(24, 60, 99, 0.15);
-}
+.post-img {
 
+    width: 80px;
 
-/* =========================
-   TÍTULO
-========================= */
-
-.titulo {
-    display: flex;
-
-    align-items: flex-start;
-
-    gap: 14px;
-
-    margin-bottom: 22px;
-
-    padding-bottom: 18px;
-
-    border-bottom: 1px solid #e5e7eb;
-}
-
-
-/* Mantém a imagem original */
-
-.titulo img {
-    width: 65px;
-
-    height: 65px;
+    height: 80px;
 
     object-fit: contain;
 
-    flex-shrink: 0;
+    display: block;
+
+    margin: 0 auto 30px;
 }
 
 
-.titulo h2 {
+/* ===========================
+   TÍTULOS
+=========================== */
+
+.post h2 {
+
     color: #183c63;
 
-    font-size: 1.45rem;
+    font-size: 24px;
+
+    line-height: 1.2;
+
+    margin-bottom: 20px;
+}
+
+
+/* ===========================
+   AUTOR
+=========================== */
+
+.post h3 {
+
+    color: #183c63;
+
+    font-size: 16px;
+
+    margin-bottom: 16px;
+}
+
+
+/* ===========================
+   TEXTOS
+=========================== */
+
+.post p {
+
+    color: #34495e;
+
+    font-size: 16px;
 
     line-height: 1.25;
 
-    margin-bottom: 9px;
+    margin-bottom: 16px;
 }
 
 
-/* =========================
-   AUTOR
-========================= */
-
-.autor {
-    color: #64748b;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 0.8rem;
-
-    font-weight: bold;
-
-    letter-spacing: 0.5px;
-}
-
-
-/* =========================
-   CONTEÚDO
-========================= */
-
-.conteudo {
-    flex: 1;
-}
-
-
-.conteudo p {
-    color: #444;
-
-    font-size: 1rem;
-
-    line-height: 1.7;
-
-    margin-bottom: 17px;
-}
-
-
-.conteudo p:last-child {
-    margin-bottom: 0;
-}
-
-
-/* =========================
+/* ===========================
    FONTE
-========================= */
+=========================== */
 
-.fonte {
-    margin-top: 20px;
+.post .fonte {
 
-    padding: 12px 14px;
+    margin-top: auto;
 
-    background: #f4f7fa;
+    margin-bottom: 12px;
 
-    border-left: 4px solid #183c63;
+    color: #34495e;
 
-    border-radius: 4px;
+    font-size: 15px;
 
-    color: #666;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 0.8rem;
+    font-style: italic;
 }
 
 
-/* =========================
+/* ===========================
    REAÇÕES
-========================= */
+=========================== */
 
 .reacoes {
+
     display: flex;
 
-    gap: 10px;
+    justify-content: center;
 
-    margin-top: 20px;
+    gap: 5px;
 
-    padding-top: 18px;
-
-    border-top: 1px solid #e5e7eb;
+    margin-top: 5px;
 }
 
 
 .reacoes button {
-    border: 1px solid #d1d5db;
 
-    background: #ffffff;
+    background-color: #f5f5f5;
 
-    color: #333;
+    border: 1px solid #999;
 
-    padding: 8px 14px;
+    border-radius: 2px;
 
-    border-radius: 7px;
+    padding: 3px 9px;
 
-    font-size: 0.95rem;
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 14px;
 
     cursor: pointer;
 
     transition:
-        background 0.2s ease,
-        transform 0.2s ease,
-        border-color 0.2s ease;
+        background-color 0.2s,
+        transform 0.2s;
 }
 
 
 .reacoes button:hover {
-    background: #eef5fb;
 
-    border-color: #183c63;
+    background-color: #e8e8e8;
 
-    transform: translateY(-2px);
+    transform: translateY(-1px);
 }
 
 
 .reacoes button:active {
+
     transform: translateY(0);
 }
 
 
 .reacoes span {
-    font-weight: bold;
 
-    margin-left: 4px;
+    margin-left: 3px;
 }
 
 
-/* =========================
-   RODAPÉ
-========================= */
+/* ===========================
+   TABLETS
+=========================== */
 
-.rodape {
-    background: #183c63;
+@media (max-width: 800px) {
 
-    color: #dce9f5;
+    .container {
 
-    text-align: center;
+        grid-template-columns: 1fr 1fr;
 
-    padding: 20px;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 0.9rem;
-}
-
-
-/* =========================
-   TABLET
-========================= */
-
-@media (max-width: 1000px) {
-
-    .posts {
-        grid-template-columns:
-            repeat(2, 1fr);
+        padding: 30px 20px;
     }
 
 }
 
 
-/* =========================
-   CELULAR
-========================= */
+/* ===========================
+   CELULARES
+=========================== */
 
-@media (max-width: 650px) {
+@media (max-width: 550px) {
 
-    .cabecalho {
-        padding: 28px 16px;
+    header h1 {
+
+        font-size: 27px;
     }
 
 
-    .cabecalho h1 {
-        font-size: 2rem;
-    }
+    header p {
 
-
-    .cabecalho p {
-        font-size: 0.95rem;
+        font-size: 14px;
     }
 
 
     .container {
-        margin: 25px auto;
 
-        padding: 0 15px;
-    }
-
-
-    .posts {
         grid-template-columns: 1fr;
 
-        gap: 20px;
+        padding: 25px 15px;
     }
 
 
     .post {
-        padding: 22px;
-    }
 
+        min-height: auto;
 
-    .titulo {
-        gap: 12px;
-    }
-
-
-    .titulo img {
-        width: 60px;
-
-        height: 60px;
-    }
-
-
-    .titulo h2 {
-        font-size: 1.35rem;
-    }
-
-
-    .conteudo p {
-        font-size: 1rem;
-
-        line-height: 1.7;
+        padding: 25px 20px;
     }
 
 }
